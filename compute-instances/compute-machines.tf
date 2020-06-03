@@ -31,6 +31,7 @@ resource "google_compute_instance" "default" {
     sudo service apache2 restart
     echo '<!doctype html><html><body><h1>www4</h1></body></html>' | tee /var/www/html/index.html"
     EOF
+  
   service_account {
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
   }
