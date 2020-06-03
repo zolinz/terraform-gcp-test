@@ -8,8 +8,12 @@ provider "google" {
   zone    = "australia-southeast1-c"
 }
 
-module "external_nlb"{
-  source = "./external_nlb"
+module "compute-instances" {
+  source = "compute-instances"
+}
+
+module "external-nlb"{
+  source = "external-nlb"
 }
 
 terraform {
