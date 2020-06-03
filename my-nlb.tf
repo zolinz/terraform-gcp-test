@@ -1,7 +1,7 @@
 provider "google" {
   version = "3.5.0"
 
-  credentials = ${credentials}
+  credentials = ${var.mycredentials}
 
   project = "terraform-course-278820"
   region  = "australia-southeast1"
