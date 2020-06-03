@@ -9,11 +9,11 @@ provider "google" {
 }
 
 module "compute-instances" {
-  source = "compute-instances"
+  source = "./compute-instances"
 }
 
 module "external-nlb"{
-  source = "external-nlb"
+  source = "./external-nlb"
 }
 
 terraform {
