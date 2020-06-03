@@ -3,7 +3,7 @@ resource "google_compute_instance" "default" {
   machine_type = "g1-small"
   zone         = "australia-southeast1-b"
 
-  #tags = ["foo", "bar"]
+  tags = ["network-lb-tag"]
 
   boot_disk {
     initialize_params {
