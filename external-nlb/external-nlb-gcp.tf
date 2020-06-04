@@ -6,7 +6,7 @@ resource "google_compute_http_health_check" "hc" {
   name               = "my-hc"
   request_path       = "/"
   host               = google_compute_address.static_ip.address
-  port               = 1050
+  port               = 80
   timeout_sec        = 1
   check_interval_sec = 1
 }
