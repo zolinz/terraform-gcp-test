@@ -7,17 +7,17 @@ tasks:
       -  docker-compose -f docker-compose.yml run --rm terraform init
 
   plan:
-    desc: "Terraform init"
+    desc: "Terraform plan"
     cmds:
       - docker-compose -f docker-compose.yml run --rm terraform plan
 
 
   apply:
-    desc: "Terraform init"
+    desc: "Terraform apply"
     cmds:
       - docker-compose -f docker-compose.yml run --rm terraform apply
 
   destroy:
-    desc: "Terraform init"
+    desc: "Terraform destroy"
     cmds:
       - docker-compose -f docker-compose.yml run --rm terraform destroy
