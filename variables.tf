@@ -1,3 +1,3 @@
-variable "mycredentials" {
-  description = "gcp"
-}
+//variable "mycredentials" {
+//  description = "gcp"
+//}
